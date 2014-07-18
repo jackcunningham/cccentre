@@ -1,0 +1,25 @@
+
+	.col.one,
+	.col.two,
+	.col.three,
+	.col.four,
+	.col.five,
+	.col.six {
+		margin:0 0 0 3%;
+		float:left;
+	}
+
+	.col:first-child {
+		margin-left: 0;
+	}
+
+	.col.one   {width:14.166667%;} 
+	.col.two   {width:31.333333%;} // (14.166667 * 2) + (3)
+	.col.three {width:48.5%;}	   // (14.166667 * 3) + (3 * 2)
+	.col.four  {width:65.666667%;} // (14.166667 * 4) + (3 * 3) 
+	.col.five  {width:82.833333%;} // (14.166667 * 5) + (3 * 4)  
+	.col.six   {width:100%;} 	   // (14.166667 * 6) + (3 * 5)  
+
+
+
+

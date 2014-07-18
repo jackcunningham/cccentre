@@ -1,0 +1,1 @@
+(function(e){var t=e(".accordion > dd").hide();e(".accordion > dt > a").click(function(){$this=e(this);$target=$this.parent().next();if(!$target.hasClass("active")){t.removeClass("active").slideUp();$target.addClass("active").slideDown()}return!1});e(".show").click(function(){e("#map").toggleClass("show-me")})})(jQuery);

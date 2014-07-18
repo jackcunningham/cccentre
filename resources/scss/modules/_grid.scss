@@ -1,0 +1,25 @@
+.row {
+	max-width:650px;
+	clear: both;
+	margin: 0 auto;
+}
+
+.row.centre .col, .row .col.centre {
+	text-align: center;
+}
+
+
+// 6 column grid
+
+@media all and (min-width: 640px) {
+	@import 'grid-cols';
+}
+
+.row.row__locked {
+	@import 'grid-cols';
+}
+
+
+
+
+

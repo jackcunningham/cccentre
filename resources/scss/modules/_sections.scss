@@ -1,0 +1,41 @@
+.section {
+
+	padding:1.25em 5%;
+
+}
+
+.section.section__pullout,
+.section.section__footer {
+	padding:1.75em 5%;
+
+	h1, h2, h3, h4, p, li, dt, dd, a {
+		color:#fff;
+	}
+
+	h1, h2, h3, h4 {
+		margin:0;
+	}
+
+	dt a b {
+		border:2px solid #fff;
+	}
+}
+
+.section.section__pullout {
+	background-color: #006699;
+}
+
+.section.section__footer {
+	background-color: #555;
+	padding: 0.25em 5%;
+	// text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.35);
+
+	h1, h2, h3, h4, p, li, dt, dd, a {
+		color:#eee;
+	}
+}
+
+.section.section__white {
+	background-color: #fff;
+}
+
