@@ -1,6 +1,10 @@
 (function($) {
     
   var allPanels = $('.accordion > dd').hide();
+
+
+
+
     
   $('.accordion > dt > a').click(function() {
       $this = $(this);
@@ -15,7 +19,13 @@
   });
 
   $('.show').click(function() {
-    $('#map').toggleClass('show-me');
+    $('#map').slideToggle( [], [ mapResize() ] );
   });
 
-})(jQuery);
+})(jQuery);  
+
+
+function mapResize() {
+  console.log("ball bag");
+  // google.maps.event.trigger(map, 'resize');
+};

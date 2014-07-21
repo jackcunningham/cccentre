@@ -3,7 +3,10 @@ html {
 	font-size: 100%;
 	font-weight:300;
 	color:#555;
-	background-color: #eee;
+	line-height: 1.4em;
+	background-color: #fff;
+	background-image: url("../images/noise.png");
+	background-repeat: repeat;
 }
 
 body {
@@ -12,24 +15,26 @@ body {
 
 a {color:#006699;}
 
-
-// Headings ------------------
-
-
 h1, h2, h3, h4, p, li {
 	display: block;
 	font-weight:300;
 }
 
-h1, h2, h3, h4 {
-	margin:1.25 0 0.25 0;
+p, li {
+	margin:0.75em 0;
+}
+
+
+// Headings ------------------
+
+h1 {
 	line-height: 1.15em;
-	clear:both;
 }
 
 h1, h2, h3, h4 {
-	margin:0.65 0;
-	line-height: 1.35em;
+	margin:0.75em 0 0.25em 0;
+	line-height: 1.15em;
+	clear:both;
 }
 
 h1 {font-size:2.5em;}
@@ -50,6 +55,19 @@ li {
 	margin: 0.75em 0;
 }
 
+// microformats ------------------
+
+.p-tel,
+.p-fax,
+.u-email {
+	font-weight: 500;
+}
+
+
+
+
+
+
 // General ------------------
 
 
@@ -69,6 +87,10 @@ img, iframe {
 	max-width: 100%;
 }
 
+iframe {
+	max-height: 640px;
+}
+
 strong {
 	font-weight: 500;
 }
@@ -76,15 +98,30 @@ strong {
 
 // Header ------------------
 
-h1 b {display:none;}
+h1 {
 
-h1 img {
-	width:80%;
-	min-width: 300px;
+	margin:0.75em 0 0.25em 0;
+
+	b {
+		display:none;
+	}
+
+	img {
+		width:85%;
+		min-width: 300px;
+		margin-right:4%;
+	}
 }
 
 
 // Legos ------------------
+
+.small-caps {
+	font-size: 0.7em;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin-right: 0.15em;
+}
 
 .nobr, .nowrap {white-space: nowrap;}
 
@@ -119,5 +156,13 @@ hr.clear {
 .show-me, .hide-me.show-me {
 	display:block;
 }
+
+
+// Local ------------------
+
+ul.contact-details {
+	margin-top: 17px;
+}
+
 	
 

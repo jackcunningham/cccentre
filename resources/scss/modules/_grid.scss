@@ -4,14 +4,10 @@
 	margin: 0 auto;
 }
 
-.row.centre .col, .row .col.centre {
-	text-align: center;
-}
-
 
 // 6 column grid
 
-@media all and (min-width: 640px) {
+@media all and (min-width: 480px) {
 	@import 'grid-cols';
 }
 
@@ -20,6 +16,20 @@
 }
 
 
+.row.row__centred .col,
+.row .col.col__centred {
+	text-align: center;
+}
 
+.row.row__centre-float {
+	
+	text-align:center;
+
+	.col {
+		float: none !important;
+		display: inline-block;
+		margin:0 auto;
+	}
+}
 
 
