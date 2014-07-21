@@ -98,9 +98,12 @@ strong {
 
 // Header ------------------
 
+
+
+
 h1 {
 
-	margin:0.75em 0 0.25em 0;
+	margin:0.25em 0 0 0;
 
 	b {
 		display:none;
@@ -108,8 +111,14 @@ h1 {
 
 	img {
 		width:85%;
-		min-width: 300px;
+		min-width: 275px;
 		margin-right:4%;
+	}
+}
+
+@media all and (min-width: 480px) {
+	h1 {
+		margin:0.75em 0 0.25em 0;
 	}
 }
 
@@ -134,6 +143,20 @@ h1 {
 hr.clear {
 	margin:0;
 	border:none;
+}
+
+hr.mobile {
+	display:block; 
+	padding-top: 1.75em;
+	border:none;
+	border-bottom:1px #ccc solid;
+
+}
+
+@media all and (min-width: 480px) {
+	hr.mobile {
+		display:none;
+	}
 }
 
 .fade {

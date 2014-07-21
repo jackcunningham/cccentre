@@ -11,16 +11,19 @@
 	@import 'grid-cols';
 }
 
+
+// Locked - force this row to keep its columns at all widths
 .row.row__locked {
 	@import 'grid-cols';
 }
 
-
+// Centred - all content is centred 
 .row.row__centred .col,
 .row .col.col__centred {
 	text-align: center;
 }
 
+// Centre float - Columns are centred using inline-block
 .row.row__centre-float {
 	
 	text-align:center;
@@ -29,6 +32,24 @@
 		float: none !important;
 		display: inline-block;
 		margin:0 auto;
+	}
+}
+
+// Reversed - the columns are reversed to help source order
+.row.row__reversed {
+
+	.col.one,
+	.col.two,
+	.col.three,
+	.col.four,
+	.col.five,
+	.col.six {
+		margin:0 3% 0 0;
+		float:right;
+	}
+
+	.col:first-child {
+		margin-right: 0;
 	}
 }
 

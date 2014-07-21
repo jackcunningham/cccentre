@@ -1,12 +1,21 @@
 .section {
 
-	padding:1.25em 5%;
+	padding:0.75em 5%;
 
 }
+@media all and (min-width: 480px) {
+	.section {
+		padding:1.25em 5%;
+	}
+}
+
+
+
+// Pullout -------------------
 
 .section.section__pullout,
 .section.section__footer {
-	padding:1.75em 5%;
+	padding:0.75em 5%;
 
 	h1, h2, h3, h4, p, li, dt, dd, a {
 		color:#fff;
@@ -23,6 +32,17 @@
 	background-color: #006699;
 }
 
+@media all and (min-width: 480px) {
+	.section.section__pullout,
+	.section.section__footer {
+		padding:1.75em 5%;
+	}
+}
+
+
+
+// Footer -------------------
+
 .section.section__footer {
 	background-color: #444;
 	padding: 0.25em 5%;
@@ -32,6 +52,9 @@
 		color:#eee;
 	}
 }
+
+
+// White -------------------
 
 .section.section__white {
 	background-color: #fff;

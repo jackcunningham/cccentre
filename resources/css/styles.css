@@ -72,14 +72,17 @@ strong {
   font-weight: 500; }
 
 h1 {
-  margin: 0.75em 0 0.25em 0; }
+  margin: 0.25em 0 0 0; }
   h1 b {
     display: none; }
   h1 img {
     width: 85%;
-    min-width: 300px;
+    min-width: 275px;
     margin-right: 4%; }
 
+@media all and (min-width: 480px) {
+  h1 {
+    margin: 0.75em 0 0.25em 0; } }
 .small-caps {
   font-size: 0.7em;
   text-transform: uppercase;
@@ -98,6 +101,15 @@ hr.clear {
   margin: 0;
   border: none; }
 
+hr.mobile {
+  display: block;
+  padding-top: 1.75em;
+  border: none;
+  border-bottom: 1px #ccc solid; }
+
+@media all and (min-width: 480px) {
+  hr.mobile {
+    display: none; } }
 .fade {
   background: #eeeeee;
   /* Old browsers */
@@ -194,6 +206,17 @@ ul.contact-details {
     display: inline-block;
     margin: 0 auto; }
 
+.row.row__reversed .col.one,
+.row.row__reversed .col.two,
+.row.row__reversed .col.three,
+.row.row__reversed .col.four,
+.row.row__reversed .col.five,
+.row.row__reversed .col.six {
+  margin: 0 3% 0 0;
+  float: right; }
+.row.row__reversed .col:first-child {
+  margin-right: 0; }
+
 .accordion dt {
   font-weight: 500;
   cursor: pointer;
@@ -229,11 +252,14 @@ ul.contact-details {
     background-color: #fff; }
 
 .section {
-  padding: 1.25em 5%; }
+  padding: 0.75em 5%; }
 
+@media all and (min-width: 480px) {
+  .section {
+    padding: 1.25em 5%; } }
 .section.section__pullout,
 .section.section__footer {
-  padding: 1.75em 5%; }
+  padding: 0.75em 5%; }
   .section.section__pullout h1, .section.section__pullout h2, .section.section__pullout h3, .section.section__pullout h4, .section.section__pullout p, .section.section__pullout li, .section.section__pullout dt, .section.section__pullout dd, .section.section__pullout a,
   .section.section__footer h1,
   .section.section__footer h2,
@@ -252,6 +278,10 @@ ul.contact-details {
 .section.section__pullout {
   background-color: #006699; }
 
+@media all and (min-width: 480px) {
+  .section.section__pullout,
+  .section.section__footer {
+    padding: 1.75em 5%; } }
 .section.section__footer {
   background-color: #444;
   padding: 0.25em 5%; }
