@@ -204,6 +204,7 @@ ul.contact-details {
   .row.row__centre-float .col {
     float: none !important;
     display: inline-block;
+    vertical-align: middle;
     margin: 0 auto; }
 
 .row.row__reversed .col.one,
