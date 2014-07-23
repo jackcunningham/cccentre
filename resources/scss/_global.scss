@@ -96,10 +96,7 @@ img, iframe {
 	max-width: 100%;
 }
 
-iframe {
-	min-height: 320px;
-	max-height: 640px;
-}
+
 
 strong {
 	font-weight: 500;
@@ -195,6 +192,11 @@ hr.mobile {
 
 ul.contact-details {
 	margin-top: 17px;
+}
+
+iframe.map {
+	min-height: 320px;
+	max-height: 640px;
 }
 
 	
