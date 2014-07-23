@@ -6,8 +6,12 @@ html {
   line-height: 1.4em;
   background-color: #fff;
   background-image: url("../images/noise.png");
-  background-repeat: repeat; }
+  background-repeat: repeat;
+  text-align: center; }
 
+@media all and (min-width: 480px) {
+  html {
+    text-align: left; } }
 body {
   margin: 0; }
 
@@ -48,6 +52,9 @@ ul, ol, li, dl, dt, dd {
 li {
   margin: 0.75em 0; }
 
+dl, dt, dd {
+  text-align: left; }
+
 .p-tel,
 .p-fax,
 .u-email {
@@ -59,13 +66,15 @@ hr {
   border-top: 1px #ccc solid;
   padding: 0;
   display: block;
-  clear: both; }
+  clear: both;
+  box-shadow: 0px 1px 1px rgba(255, 255, 255, 0.65); }
 
 img, iframe {
   width: 100%;
   max-width: 100%; }
 
 iframe {
+  min-height: 320px;
   max-height: 640px; }
 
 strong {
@@ -138,7 +147,7 @@ ul.contact-details {
   margin-top: 17px; }
 
 .row {
-  max-width: 650px;
+  max-width: 680px;
   clear: both;
   margin: 0 auto; }
 

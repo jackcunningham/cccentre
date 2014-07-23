@@ -7,6 +7,10 @@ html {
 	background-color: #fff;
 	background-image: url("../images/noise.png");
 	background-repeat: repeat;
+	text-align: center;
+}
+@media all and (min-width: 480px) {
+	html {text-align: left;}
 }
 
 body {
@@ -55,6 +59,10 @@ li {
 	margin: 0.75em 0;
 }
 
+dl, dt, dd {
+	text-align: left;
+}
+
 // microformats ------------------
 
 .p-tel,
@@ -78,6 +86,7 @@ hr {
 	padding:0;
 	display:block;
 	clear:both;
+	box-shadow: 0px 1px 1px rgba(255, 255, 255, 0.65);
 }
 
 
@@ -88,6 +97,7 @@ img, iframe {
 }
 
 iframe {
+	min-height: 320px;
 	max-height: 640px;
 }
 
