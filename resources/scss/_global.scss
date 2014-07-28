@@ -132,6 +132,17 @@ h1 {
 
 // Legos ------------------
 
+.fade-me {
+	
+	a img {
+		opacity: 0.75;
+	}
+
+	a:hover img {
+		opacity:0.95;
+	}
+}
+
 .small-caps {
 	font-size: 0.7em;
 	text-transform: uppercase;
