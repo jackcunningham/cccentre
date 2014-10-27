@@ -109,7 +109,8 @@ h1 {
 
 hr.clear {
   margin: 0;
-  border: none; }
+  border: none;
+  visibility: hidden; }
 
 hr.mobile {
   display: block;
