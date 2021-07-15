@@ -40,7 +40,10 @@ h2 {
   font-size: 1.75em; }
 
 h3 {
-  font-size: 1.35em; }
+  font-size: 1em;
+  font-weight: bold;
+  margin: 2em 0 0.5em;
+}
 
 h4 {
   font-size: 1.15em; }
@@ -269,6 +272,32 @@ iframe.map {
 
 .section {
   padding: 0.75em 5%; }
+
+#cookie-notice {
+  position: fixed;
+  bottom: 0;
+  width: 90%;
+  padding: 2em 5%;
+  transition: 0.66s ease all;
+  box-shadow: 0 -3px 12px rgba(0, 0, 0, 0.15);
+}
+
+#cookie-notice.is-hidden {
+  opacity: 0;
+  transform: translateY(180px);
+}
+
+button {
+  background: #64B8DB;
+  color: #fff;
+  font-weight: bold;
+  height: 42px;
+  border-radius: 4px;
+  border: 0;
+  padding: 0 2em;
+  text-shadow: -1px -1px 1px rgba(12, 102, 153, 0.4);
+}
+
 
 @media all and (min-width: 540px) {
   .section {
