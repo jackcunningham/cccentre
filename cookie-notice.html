@@ -11,7 +11,6 @@
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,500" rel="stylesheet">
 <link rel="stylesheet" href="resources/css/styles.css">
 </head>
-
 <body>
 <div class="section">
 	<div>
@@ -71,6 +70,7 @@
 </div>
 
 
+
 <div class="section section__white">
 	<div class="row row__locked fade-me">
 		<div class="col one">
@@ -97,36 +97,32 @@
 		<div class="col six">
 
 		<h2>Some frequently asked questions...</h2>
-		<ul class="accordion">
-			<li>
-				<h3>My car has been damaged. What should I do?</h3>
-				<p>If you haven't already, call your insurer. They'll give you a list of repairers. If you decide to use us, we'll call you to arrange the work.</p>
-			</li>
-			<li>
-				<h3>Which insurance companies are you approved repairers for?</h3>
-				<p>We carry out work for all leading insurance companies and are approved repairers for Islands Insurance, National Farmers Union, Motor Care, Admiral, Bell, Elephant and Brit Insurance.</p>
-			</li>
-			<li>
-				<h3>My insurer isn't on that list. Can I still use you?</h3>
-				<p>No problem, when you call your insurer, just let them know you'd like to use us. We are BSI accredited <small>(KM561429)</small> and carry out work for all leading insurance companies.</p>
-			</li>
-			<li>
-				<h3>How do I know I'll get a good repair on my car?</h3>
-				<p>We carry the <a href="https://www1.kitemark.com/cms/listing/treewalk-garage-ltd-t-a-cunningham-car-centre-total-service-station--51094b60421d8.html">BSI, PAS 125 kitemark&#153; for Vehicle Damage Repair <small>(KM561429)</small></a>. This guarantees that our staff are <a href="https://ata.theimi.org.uk/ATA">ATA qualified</a> for the work they are undertaking and our equipment is regularly tested for safety. You can have confidence that your vehicle will be repaired safely and to the highest standards.</p>
-			</li>
-			<li>
-				<h3>My car has been damaged and I'm not making a claim. Can you still help us?</h3>
-				<p>Of course. We will be happy to provide you with a competitive estimate for the work. We look forward to hearing from you.</p>
-			</li>
-			<li>
-				<h3>Will I get a complimentary loan car?</h3>
-				<p>Yes. While your vehicle is being repaired you'll have access to a free loan car. We have both manual and automatic, plus a range of vans.</p>
-			</li>
-			<li>
-				<h3>Do you have a Privacy Policy?</h3>
-				<p>Yes. We are fully compliant with current European GDPR and Privacy regulations. This site does not use cookies.</p>
-			</li>
-		</ul>
+		<dl class="accordion">
+			<dt><a><b>+</b>My car has been damaged. What should I do?</a></dt>
+			<dd>If you haven't already, call your insurer. They'll give you a list of repairers. If you decide to use us, we'll call you to arrange the work.</dd>	
+
+			<dt><a><b>+</b>Which insurance companies are you approved repairers for?</a></dt>
+			<dd>We carry out work for all leading insurance companies and are approved repairers for Islands Insurance, National Farmers Union, Motor Care, Admiral, Bell, Elephant and Brit Insurance.</dd>	
+
+			<dt><a><b>+</b>My insurer isn't on that list. Can I still use you?</a></dt>
+			<dd>No problem, when you call your insurer, just let them know you'd like to use us. We are BSI accredited <small>(KM561429)</small> and carry out work for all leading insurance companies.</dd>	
+
+			<dt><a><b>+</b>How do I know I'll get a good repair on my car?</a></dt>
+			<dd>We carry the <a href="https://www1.kitemark.com/cms/listing/treewalk-garage-ltd-t-a-cunningham-car-centre-total-service-station--51094b60421d8.html">BSI, PAS 125 kitemark&#153; for Vehicle Damage Repair <small>(KM561429)</small></a>. This guarantees that our staff are <a href="https://ata.theimi.org.uk/ATA">ATA qualified</a> for the work they are undertaking and our equipment is regularly tested for safety. You can have confidence that your vehicle will be repaired safely and to the highest standards.</dd>
+
+			<dt><a><b>+</b>My car has been damaged and I'm not making a claim. Can you still help us?</a></dt>
+			<dd>Of course. We will be happy to provide you with a competitive estimate for the work. We look forward to hearing from you.</dd>
+
+			<dt><a><b>+</b>Will I get a complimentary loan car?</a></dt>
+			<dd>Yes. While your vehicle is being repaired you'll have access to a free loan car. We have both manual and automatic, plus a range of vans.</dd>
+
+			<dt><a><b>+</b>Do you have a Privacy / Cookie Policy?</a></dt>
+			<dd>Yes. We are fully compliant with current European GDPR and Privacy regulations. Please see our <a href="cookie-policy.html">Cookie policy</a> for more information.</dd>
+
+			<!--<dt><a><b>+</b>I'm worried about my no claims bonus.</a></dt>
+			<dd>You might find you are within the maximum of claims you can make. Check with your insurer and you might find your bonus is not effected.</dd>-->
+
+		</dl>
 		<br/>
 		<br/>
 
@@ -167,27 +163,16 @@
 	</footer>
 </div>
 
+
 </body>
 
-<script type="text/javascript">
-
-// Set current year in copyright notice
-const currentYear = new Date().getFullYear();
-const yearContainer =  document.querySelector('#year');
-yearContainer.innerHTML = currentYear;
-
-// Accordions
-const accordions = document.querySelectorAll('.accordion li');
-const openThisAccordion = function(e) {
-	for (let accordion of accordions) {
-		accordion.classList.add("hidden");
-	}
-	this.classList.remove("hidden");
-};
-for (let accordion of accordions) {
-	accordion.classList.add("hidden");
-	accordion.addEventListener("click", openThisAccordion, false);
-}
-
+<script src="resources/js/scripts.js"></script>
+<script>
+ (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+ })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+ ga('create', 'UA-53197722-1', 'auto');
+ ga('send', 'pageview');
 </script>
 

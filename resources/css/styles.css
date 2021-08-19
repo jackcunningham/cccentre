@@ -236,23 +236,62 @@ iframe.map {
 .row.row__reversed .col:first-child {
   margin-right: 0; }
 
-.accordion dt {
+.accordion li {
   font-weight: 500;
   cursor: pointer;
-  margin: 0.75em 0 0.25em 0; }
-.accordion dd {
-  margin-bottom: 1.25em; }
-.accordion dt a b {
+  margin: 2em 0; 
+  position: relative;
+  text-align: left;
+  padding-left: 40px;
+  transition: all 0.33s ease;
+}
+
+.accordion li h3 {
+  margin: 0.5em 0 0.25em; 
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 1.3em;
+  transition: all 0.33s ease;
+}
+  
+.accordion li p {
+  margin: 0; 
+  transition: all 0.15s ease;
+}
+
+.accordion li:before {
+  content: '+';
+  position: absolute;
+  top: 0;
+  left: 0;
   display: inline-block;
-  border: 2px solid #555;
+  border: 2px solid #fff;
   font-weight: 300;
   border-radius: 15px;
   margin-right: 0.5em;
-  line-height: 23px;
+  line-height: 24px;
   height: 24px;
   width: 24px;
   text-align: center;
-  font-size: 21px; }
+  font-size: 21px;
+}
+
+.accordion li.hidden {
+  margin: 1em 0;
+}
+
+.accordion li.hidden h3 {
+  padding-top: 3px;
+}
+
+.accordion li.hidden p { 
+  opacity: 0;
+  max-height: 0;
+ }
+
+
+
+
 
 .show {
   font-weight: 500;
