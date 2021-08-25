@@ -18,7 +18,7 @@
 		<div class="row row__centred">
 
 			<div class="col six">
-			<h1 class="p-name"><img src="resources/images/cunningham-car-centre-logo.svg"><b>Cunningham Car Centre</b></h1>
+			<h1 class="p-name"><img src="resources/images/cunningham-car-centre-mark.svg"><b>Cunningham Car Centre</b></h1>
 			</div>
 
 		<hr>
@@ -112,7 +112,7 @@
 			</li>
 			<li>
 				<h3>How do I know I'll get a good repair on my car?</h3>
-				<p>We carry the <a href="https://www1.kitemark.com/cms/listing/treewalk-garage-ltd-t-a-cunningham-car-centre-total-service-station--51094b60421d8.html">BSI, PAS 125 kitemark&#153; for Vehicle Damage Repair <small>(KM561429)</small></a>. This guarantees that our staff are <a href="https://ata.theimi.org.uk/ATA">ATA qualified</a> for the work they are undertaking and our equipment is regularly tested for safety. You can have confidence that your vehicle will be repaired safely and to the highest standards.</p>
+				<p>We carry the <!-- https://www1.kitemark.com/cms/listing/treewalk-garage-ltd-t-a-cunningham-car-centre-total-service-station--51094b60421d8.html --><a href="https://www.bsigroup.com/en-GB/our-services/product-certification/industry-sector-schemes/automotive-product-certification-and-kitemark-schemes/bs-10125-bsi-kitemark-vehicle-damage-repair-automotive/">BSI, PAS 125 kitemark&#153; for Vehicle Damage Repair <small>(KM561429)</small></a>. This guarantees that our staff are <a href="https://tide.theimi.org.uk/">ATA qualified</a> for the work they are undertaking and our equipment is regularly tested for safety. You can have confidence that your vehicle will be repaired safely and to the highest standards.</p>
 			</li>
 			<li>
 				<h3>My car has been damaged and I'm not making a claim. Can you still help us?</h3>
@@ -124,7 +124,7 @@
 			</li>
 			<li>
 				<h3>Do you have a Privacy Policy?</h3>
-				<p>Yes. We are fully compliant with current European GDPR and Privacy regulations. This site does not use cookies.</p>
+				<p>Yes. We are fully compliant with current European GDPR and Privacy regulations. This site does not use cookies. Please see our <a href="privacy-notice.html">Privacy Notice</a> for more information.</p>
 			</li>
 		</ul>
 		<br/>
@@ -142,25 +142,16 @@
 		<p>&copy;<span id="year">2014</span> Treewalk Garage Limited, trading as Cunningham Car Centre.</p>
 		</div>
 
-		<div class="col three">
+		<div class="col two">
 			<p>
-			<div class="addthis_sharing_toolbox"></div>
+			<a href="privacy-notice.html">Privacy Notice</a>
 			</p>
 		</div>
 
-		<hr class="clear">
-	</footer>
-</div>
-
-<div id="cookie-notice" class="section section__footer is-hidden">
-	<footer class="row">
-
-		<div class="col five">
-			<p>This site users cookies, please accept our <a href="cookie-policy.html" class="nobr">Cookie policy</a> to continue. </p>
-		</div>
-
 		<div class="col one">
-			<button id="accept-cookies">Accept</button>
+			<p>
+			<a href="https://www.westcreativedigital.com" class="west" title="West Creative Digital">Site by <strong>West</strong></a>
+			</p>
 		</div>
 
 		<hr class="clear">
@@ -178,15 +169,21 @@ yearContainer.innerHTML = currentYear;
 
 // Accordions
 const accordions = document.querySelectorAll('.accordion li');
-const openThisAccordion = function(e) {
-	for (let accordion of accordions) {
-		accordion.classList.add("hidden");
+const toggleThisAccordion = function(e) {
+	if (this.classList.contains("hidden")) {
+		for (let accordion of accordions) {
+			accordion.classList.add("hidden");
+		}
+		this.classList.remove("hidden");
+	} else {
+		if (this === e.target) {
+			this.classList.add("hidden");
+		}
 	}
-	this.classList.remove("hidden");
 };
 for (let accordion of accordions) {
 	accordion.classList.add("hidden");
-	accordion.addEventListener("click", openThisAccordion, false);
+	accordion.addEventListener("click", toggleThisAccordion, false);
 }
 
 </script>
